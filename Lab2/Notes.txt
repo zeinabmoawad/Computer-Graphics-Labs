@@ -1,0 +1,14 @@
+1- to draw multi shapes in shader 
+   1- put this with different phase for each shape
+     glUniform1f(time_loc, time+1.0);// not in same phase
+     glDrawArrays(GL_TRIANGLES, 0, 3);
+    2-
+ 2-Gluint ==> unsigned integer
+ 3-GPU not read ram 
+ 4-glbind====>to not name the variable using it without name
+ 5-vertex array used to read from buffer and make it to vertex shader
+ 6-glVertexAttribPointer(loction,no.of elements in array,type,normalized or not,step,pointer begin to read)//relate vertex to buffer
+ 7-can make two buffers(color, vertex) but should work in two buffers
+ 8-  make vertex then color but hard to read each vertex with it's color 
+ 9-layout(location=0)===>used to make const location
+ 10-if data not chage too much so store in GPU
